@@ -4,13 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box-Shadow and Text-Shadow </title>
+
+    <style>
+
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+
+        }
+        /* *{
+            margin: 0 auto;
+
+        } */
+
+        .container{
+           
+            height: 650px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .box{
+            width: var(--custom-width);
+            height: 400px;
+            background-color: aquamarine;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px brown; */
+
+
+            /* x-offset, y-offset, blur-radius, color */
+            box-shadow: 10px 15px 15px var(--primary-color);
+
+
+             /* x-offset, y-offset, blur-radius, spread-radius, color */
+            /* box-shadow: 10px 15px 5px 20px brown; */
+
+            /* box-shadow: 10px 15px 5px 20px rgba(0, 0, 0, 0.9); */
+
+            /* box-shadow: inset 10px 15px brown; */
+
+            /* box-shadow: 10px 15px red, 15px 8px green; */      
+        }
+        #head1{
+            /* x-offset, y-offset, blur-radius, color */
+            text-shadow: 2px 3px 5px green;
+            /* By default shadow color is black */
+
+            /* text-shadow: yellow 5px 10px; */
+        }
+
+        blockquote {
+  padding: 20px;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.9);
+}
+
+    </style>
 </head>
 <body>
-    <section>
-        <body>
-            
-        </body>
-    </section>
+
+    <div class="container">
+        <div class="box">
+            <img src="logo.svg" alt="">
+            <h2 id="head1">Welcome to Box-Shadow</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, vitae! Facilis consequatur dolore, natus facere odit assumenda tempore quod, nemo voluptate eum et repellendus reiciendis dicta magnam ipsa sunt totam?</p>
+        </div>
+
+        <blockquote>
+            <q>
+              You may shoot me with your words,<br />
+              You may cut me with your eyes,<br />
+              You may kill me with your hatefulness,<br />
+              But still, like air, I'll always with you.
+            </q>
+            <p>&mdash; Ayush Aryan </p>
+          </blockquote>
+    </div>
+   
     
 </body>
 </html>
+
+
+<!-- 
+    BOX-SHADOWS
+
+    /* Keyword values */
+box-shadow: none;
+
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
+
+/* Any number of shadows, separated by commas */
+box-shadow:
+  3px 3px red,
+  -1em 0 0.4em olive;
+ -->
+
+
+
+<!-- 
+    
+    TEXT-SHADOWS
+
+/* offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px black;
+
+/* color | offset-x | offset-y | blur-radius */
+text-shadow: #fc0 1px 0 10px;
+
+/* offset-x | offset-y | color */
+text-shadow: 5px 5px #558abb;
+
+/* color | offset-x | offset-y */
+text-shadow: white 2px 5px;
+
+/* offset-x | offset-y
+/* Use defaults for color and blur-radius */
+text-shadow: 5px 10px;
+
+
+ -->
