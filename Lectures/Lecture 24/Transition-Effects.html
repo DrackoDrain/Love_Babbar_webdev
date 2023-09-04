@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effects </title>
+
+    <style>
+        .box{
+            width: 350px;
+            height: 200px;
+            background-color: beige;
+            border: 3px solid black;
+
+            /* transition: all;
+            transition-duration: 3s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out; */
+
+
+            /* Shorthand notation  */
+
+            transition: width 2s, height 5s;
+
+        }
+
+        .box:hover{
+            width: 700px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
